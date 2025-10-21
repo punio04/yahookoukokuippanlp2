@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.blank {
+  border: 5px solid transparent;
+  animation: blink 1s infinite;
+}
+
+.blank-radius {
+  border-radius: 40px;
+  border: 5px solid transparent;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+.req::after {
+  content: "必須";
+  color: red;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-left: 0.25em;
+}
